@@ -2,8 +2,6 @@
 const text = document.getElementById('status')
 const btn = document.getElementById('enterBtn')
 btn.addEventListener('click',()=>{
-	let newText = document.createElement("h1")
-	newText.textContent = "Entered Metaverse"
-	newText.setAttribute('id','status');
-	text.parentNode.replaceChild(newText, text)
+	let p = document.getElementById("status");
+	p.innerHTML="<h1>Entered Metaverse</h1>";
 })
